@@ -1,8 +1,11 @@
 # Développer Papillon avec
 
+
+!!! danger "Utilisation d'EAS"
+    Le build via EAS n'est pas recommandé et il s'agit d'une alternative. Il se peut que des erreurs surviennent lors de l'utilisation de cette méthode ou que cette méthode n'est pas à jour. L'équipe de Papillon ne garantis pas le support d'EAS. Il est à utiliser notamment si vous avez peu de mémoire, de performance ou de stockage mais cela offre moins de flexibilité et de contrôle sur le build. 
+
 !!! warning ""
     Ce tutoriel n'est pas complet. Il est en cours de rédaction. Si vous avez des questions, n'hésitez pas à demander sur le [Discord](https://discord.gg/ywkBZx2jFB){target=\_blank}.
-
     Il ne s'adresse pour l'instant qu'aux développeurs **Android**, mais un tutoriel pour **iOS** est en cours de rédaction.
 
 ## **Pré-requis**
@@ -16,7 +19,7 @@
 -   [x] Un compte Expo-EAS
 
 !!! info "Eas, c'est quoi ?"
-    EAS ou Expo Application Services est un service cloud qui permet de construire, déployer et gérer des applications Expo ou React Native. Créé par la team derrière le framework Expo, EAS permet dans cette usage, de build une application Papillon gratuitement (même si il existe un plan payant pour des fonctionnalités avancées). Il est à utiliser notamment si vous avez peu de mémoire, de performance ou de stockage mais cela offre moins de flexibilité et de contrôle sur le build.
+    EAS ou Expo Application Services est un service cloud qui permet de construire, déployer et gérer des applications Expo ou React Native. Créé par la team derrière le framework Expo, EAS permet dans cette usage, de build une application Papillon gratuitement (même si il existe un plan payant pour des fonctionnalités avancées). 
 
 ## **Installation des dépendances**
 
@@ -69,7 +72,9 @@ Rendez-vous sur la page de votre projet EAS, vous y trouverez deux informations 
 
 -   Ligne 220, variable **`owner`**: remplacer par votre nom de compte EAS. (champ "_Owner_" sur la page EAS)
 
-!!! warning "Ne pas ajouter dans un commit git ce fichier si vous l'avez modifié de la sorte !"
+!!! warning "Ne pas ajouter dans un commit git !"
+    Il est important de ne pas ajouter ces modifications dans un *commit git*, pour éviter de remplacer l'application officielle. Toute contribution ne respectant pas ces consignes sera refusée. 
+    De même que les fichiers dans les dossiers `android` et `ios` suite à la commande `expo prebuild`.
 
 3- Exécutez la commande suivante dans votre terminal :
 
